@@ -58,7 +58,7 @@ section {
     border-bottom: 3px solid #f9f9f9;
 }
 
-.menu-section img {
+.menu-section img, #modal-img {
     max-width: 340px;
     margin: 0 auto;
     display: block
