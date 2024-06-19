@@ -1,8 +1,12 @@
 :root {
+    --nav-color: hsl(335deg 85.83% 78.81%);
     --primary-color: hsl(335, 90%, 85%);
     --primary-color-light: hsl(337, 100%, 88%);
-    --font-color: #623746;
-    --font-color-dark: hsl(339, 28%, 10%);
+    --font-color: #fff;
+}
+
+* {
+    font-family: "Averia Libre";
 }
 
 h1 {
@@ -10,16 +14,13 @@ h1 {
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--nav-color);
     box-shadow: 0 2px 8px hsla(339, 28%, 30%, 0.3);
 }
 
 .nav-link {
+    font-weight: 500;
     color: var(--font-color);
-}
-
-.nav-link:hover {
-    color: var(--font-color-dark)
 }
 
 section {
@@ -74,6 +75,7 @@ section {
 #contato img {
     opacity: 0.3;
     width: 32.875em;
+    max-width: 100%;
 }
 
 footer {
