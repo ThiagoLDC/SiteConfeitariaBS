@@ -64,6 +64,10 @@ section {
     display: block
 }
 
+.menu-section .row > * {
+    cursor: pointer;
+}
+
 #contato h1 {
     color: var(--primary-color)
 }
