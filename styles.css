@@ -33,8 +33,9 @@ section {
 }
 
 #header {
-    background-image: url(images/base.jpeg);
-    background-position: center;
+    filter: brightness(80%);
+    background-image: url(images/background.jpg);
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
