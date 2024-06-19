@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Confeitaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,12 +17,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md sticky-top navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/favicon.png" height="27px" alt="Confeitaria">
-                Confeitaria
-            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-label="Alternar navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -43,6 +44,10 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logoBranco.png" height="50px" alt="Confeitaria">
+
+                </a>
             </div>
         </div>
     </nav>
@@ -52,29 +57,22 @@
 
     <section id="sobre">
         <div class="container">
-            <h1>Sobre</h1>
 
             <div class="row">
+
                 <div class="col-md-6">
+                    <h1>Sobre</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat nisi sit amet lorem
-                        consectetur, ac molestie elit ornare. Sed porttitor arcu lectus, sit amet feugiat mi aliquam
-                        malesuada. Nam porta vehicula ligula. Cras nunc tellus, mollis sit amet consectetur in,
-                        tristique
-                        non augue. Aliquam a est in libero mollis pretium sed a libero. Nam non ullamcorper tellus.
-                        Quisque
-                        turpis nibh, vestibulum vitae imperdiet sed, porttitor sagittis odio.
+                        Bem-vindo à Saboriê, onde a confeitaria artesanal ganha vida. Fundada por Patrícia, apaixonada
+                        por doces há cerca de 20 anos, a Saboriê é fruto de um talento herdado de sua avó paterna.
+
                     </p>
                     <p>
-                        Nunc urna augue, placerat ut odio nec, dictum mollis ante. Nam elementum mi nulla, eu tempus
-                        massa
-                        porttitor placerat. Aenean non convallis odio, eleifend fermentum neque. Ut posuere nisl at
-                        tellus
-                        venenatis, id faucibus arcu vestibulum. Suspendisse laoreet ac lectus dignissim imperdiet. Sed
-                        pellentesque consequat elit, eu vulputate orci imperdiet non. Praesent cursus auctor felis ac
-                        porta.
-                        Cras in mi eu ligula elementum commodo. Etiam lobortis faucibus sem, at vestibulum ex gravida
-                        eget.
+                        Desde jovem, Patrícia encantava a todos com suas criações deliciosas, seguindo os ensinamentos
+                        de sua avó. Hoje, ela transforma essa paixão em um negócio artesanal, oferecendo doces feitos
+                        com carinho e os melhores ingredientes. Na Saboriê, nossa missão é criar experiências únicas e
+                        memoráveis. Seja para um evento especial ou para adoçar seu dia a dia, estamos aqui para tornar
+                        cada momento mais doce.
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -140,15 +138,15 @@
         <div class="container-lg">
             <h1>Salgados</h1>
             <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
+                <div class="col-sm-6 col-md-4 mb-4">
                     <img src="images/produtos/empadao-calabresa.jpg" class="w-100 rounded mb-2" alt="Empadão">
                     <div class="text-center">Empadão de Calabresa</div>
                 </div>
-                <div class="col-sm-6 col-md-3 mb-4">
+                <div class="col-sm-6 col-md-4 mb-4">
                     <img src="images/produtos/pao-salgado.jpg" class="w-100 rounded mb-2" alt="Pão Salgado">
                     <div class="text-center">Pão Salgado</div>
                 </div>
-                <div class="col-sm-6 col-md-3 mb-4">
+                <div class="col-sm-6 col-md-4 mb-4">
                     <img src="images/produtos/pastelao.jpg" class="w-100 rounded mb-2" alt="Pastelão">
                     <div class="text-center">Pastelão</div>
                 </div>
@@ -164,28 +162,38 @@
                     <form>
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control">
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-control">
+                            <input type="email" id="email" name="email" placeholder="Digite seu email"
+                                class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="tel" class="form-label">Telefone</label>
-                            <input type="text" id="tel" name="tel" class="form-control">
+                            <input type="text" id="tel" name="tel" placeholder="Digite seu telefone"
+                                class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control"></textarea>
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"
+                                class="form-control"></textarea>
                         </div>
                         <button class="btn btn-success">Enviar</button>
                     </form>
                 </div>
+
+                <div class="col-md-5">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
             </div>
+
+        </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-3">
         Confeitaria &copy; Todos os direitos reservados
     </footer>
 
